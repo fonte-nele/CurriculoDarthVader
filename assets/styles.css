@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset-CSS - Restaura as configurações para o básico */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+/* Background Escuro para o Corpo */
+html, body {
+  background: #181818;
+  font-family: 'Lato', helvetica,arial,sans-serif;
+  font-size: 16px;
+  color: #222
+}
+
+/* Corpo do Currículo */
+#cv {
+  width: 90%;
+  max-width: 800px;
+  background: #f3f3f3;
+  margin: 30px auto;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  color: #444
+}
+
+/* Cabeçalho */
+.personal-details {
+  padding: 25px 35px;
+  border-bottom: 2px solid #4D5382; 
+  background: #EDEDED;
+  display: flex;
+  justify-content: space-between;
+}
+
+#avatar {
+  width: 12.5%;
+  margin-right: -20%;
+}
+
+#avatar img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+#name-title h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  margin-bottom: -6px;
+}
+
+#name-title h2 {
+  font-size: 2em;
+  margin-left: 2px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+#contact-details ul {
+  list-style-type: none;
+  font-size: 0.9em;
+  margin-top: 2px
+}
+
+#contact-details ul li {
+  margin-bottom: 3px;
+  color: #444
+}
+
+#contact-details ul li a {
+  color: #444;
+  text-decoration: none;
+  transition: all .3s ease-in
+}
+
+#contact-details ul li a:hover {
+  color: #4D5382
+}
+
+/* Corpo do Currículo */
+section {
+  border-top: 1px solid #DEDEDE;
+  padding: 20px 0 0;
+  display: flex
+}
+
+section:first-child {
+  border-top: 0;
+}
+
+section:last-child {
+  padding: 20px 0 10px;
+}
+
+.section-title {
+  float: left;
+  width: 25%;
+  margin-left: 15px;
+}
+
+.section-content {
+  float: right;
+  width: 70%;
+}
+
+.experience-skills {
+  list-style-type: none;
+  column-count: 2;
+  font-size: 1em;
+  color: #444
+}
+
+.section-title h1 {
+  font-family: 'Roboto',Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #4D5382;
+}
+
+.section-content h2 {
+  font-family: 'Roboto',Helvetica,Arial,sans-serif;
+  font-size: 1.5em;
+  margin-bottom: -2px
+}
+
+.sub-details {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-bottom: 3px
+}
+
+.key-skills {
+  list-style-type: none;
+  column-count: 3;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #444;
+}
+
+.key-skills li {
+  margin-bottom: 3px;
+}
