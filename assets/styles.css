@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
+ 
 /* Reset-CSS - Restaura as configurações para o básico */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -167,4 +167,58 @@ section:last-child {
 
 .key-skills li {
   margin-bottom: 3px;
+}
+
+/* Responsividade */
+/* Tamanho médio */
+@media all and (min-width: 602px) and (max-width:800px) {
+
+  #avatar {
+    display: none;
+  }
+  .key-skills{
+    column-count: 2;
+  }
+}
+
+/* Tamanho pequeno */
+@media all and (max-width: 601px) {
+  #cv {
+    width: 95%;
+    margin: 10px auto;
+    min-width: 280px;
+    padding: 10px;
+  }
+  #avatar {
+    display: none;
+  }
+  #name, #contact-details {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  section, .personal-details{
+    display: block;
+  }
+  .personal-details{
+    text-align: center;
+  }
+  .section-title, .section-content{
+    float: none;
+    width: 100%;
+  }
+  .section-title{
+    text-align: center;
+    margin-left: -2px;
+    font-size: 1.25em;
+  }
+  .key-skills{
+    column-count: 2;
+  }
+}
+
+@media print {
+  #cv {
+    width: 100%;
+  }
 }
